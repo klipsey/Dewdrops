@@ -48,7 +48,11 @@ namespace Dewdrops
         /// <summary>
         /// Represents the Equipments assetbundle, which contains exclusively the Equipments supplied by this Mod.
         /// </summary>
-        Equipments
+        Equipments,
+        /// <summary>
+        /// Represents the Survivors assetbundle, which contains exclusively the Survivors supplied by this Mod.
+        /// </summary>
+        Survivors
     }
     /// <summary>
     /// The mod's "Assets" class, which contains all the necesary assetbundle data for loading assets.

@@ -2,7 +2,10 @@
     "name": "Dewdrops.Runtime",
     "rootNamespace": "Dewdrops",
     "references": [
-        "GUID:08e20a9dcb84ac748840227dcac08af2"
+        "GUID:08e20a9dcb84ac748840227dcac08af2",
+        "GUID:a44f47cf3ada4435dbc516bad0bc86fe",
+        "GUID:a984519d39b15f34e81ac20952f1ab4e",
+        "GUID:58beec084e8fd7f4098a287906b7c7da"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -24,8 +27,6 @@
         "RoR2.dll",
         "RoR2BepInExPack.dll",
         "Unity.Addressables.dll",
-        "Unity.TextMeshPro.dll",
-        "UnityEngine.UI.dll",
         "R2API.Addressables.dll",
         "R2API.ArtifactCode.dll",
         "R2API.Colors.dll",
@@ -34,7 +35,11 @@
         "R2API.Elites.dll",
         "R2API.RecalculateStats.dll",
         "R2API.Director.dll",
-        "Unity.ResourceManager.dll"
+        "Unity.ResourceManager.dll",
+        "R2API.Networking.dll",
+        "R2API.Core.dll",
+        "LegacyResourcesAPI.dll",
+        "CustomEmotesAPI.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [

@@ -43,6 +43,9 @@ namespace Dewdrops
         //Singleton access pattern to our instance.
         internal static DewdropsMain instance { get; private set; }
 
+        public static bool emotesInstalled => BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.weliveinasociety.CustomEmotesAPI");
+
+
         private void Awake()
         {
             instance = this;

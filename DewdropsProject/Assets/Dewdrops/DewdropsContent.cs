@@ -156,5 +156,27 @@ namespace Dewdrops
         {
             public static ItemDef ExampleItem;
         }
+
+        public static void CreateAndAddEffectDef(GameObject effect)
+        {
+            EffectDef effectDef = new EffectDef(effect);
+
+            DewdropsContent.DewdropsContentPack.effectDefs.AddSingle(effectDef);
+        }
+
+        public static void AddNetworkSoundEventDef(NetworkSoundEventDef networkSoundEventDef)
+        {
+            DewdropsContent.DewdropsContentPack.networkSoundEventDefs.AddSingle(networkSoundEventDef);
+        }
+        public static NetworkSoundEventDef CreateAndAddNetworkSoundEventDef(string eventName)
+        {
+            NetworkSoundEventDef networkSoundEventDef = ScriptableObject.CreateInstance<NetworkSoundEventDef>();
+            networkSoundEventDef.akId = AkSoundEngine.GetIDFromString(eventName);
+            networkSoundEventDef.eventName = eventName;
+
+            AddNetworkSoundEventDef(networkSoundEventDef);
+
+            return networkSoundEventDef;
+        }
     }
 }
